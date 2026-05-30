@@ -8,20 +8,40 @@ owner: kraboo-labs
 repo: dsa-api-status
 
 sites:
+  # --- Temporary cutover hosts on ibuildtoday.com ---
+  # Primary during initial deploy; replaced by the dsa-api.com hosts once
+  # that domain's DNS is set up. Remove from this list after cutover.
+  - name: API (ibuildtoday temp)
+    url: https://dsa-api.ibuildtoday.com/v1/version
+    expectedStatusCodes: [200]
+    tags: [production, temp-host]
+
+  - name: API — health, DB-backed (ibuildtoday temp)
+    url: https://dsa-api.ibuildtoday.com/v1/health
+    expectedStatusCodes: [200]
+    tags: [production, temp-host]
+
+  - name: Docs, Swagger UI (ibuildtoday temp)
+    url: https://docs-dsa-api.ibuildtoday.com/docs
+    expectedStatusCodes: [200]
+    tags: [production, temp-host]
+
+  # --- Canonical hosts on dsa-api.com ---
+  # Expected DOWN until that domain's DNS is set up and the cutover happens.
   - name: API
     url: https://api.dsa-api.com/v1/version
     expectedStatusCodes: [200]
-    tags: [production]
+    tags: [production, canonical]
 
   - name: API — health (DB-backed)
     url: https://api.dsa-api.com/v1/health
     expectedStatusCodes: [200]
-    tags: [production]
+    tags: [production, canonical]
 
   - name: Docs (Swagger UI)
     url: https://docs.dsa-api.com/docs
     expectedStatusCodes: [200]
-    tags: [production]
+    tags: [production, canonical]
 
   - name: Open data — trusted-flaggers.json
     url: https://raw.githubusercontent.com/kraboo-labs/dsa-data/main/data/trusted-flaggers.json
