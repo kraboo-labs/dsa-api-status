@@ -1,0 +1,67 @@
+# Upptime config — https://upptime.js.org
+#
+# This file drives the cron-based GitHub Actions that ping our endpoints
+# every 5 minutes and update the public status page at
+# https://status.dsa-api.com.
+
+owner: kraboo-labs
+repo: dsa-api-status
+
+sites:
+  - name: API
+    url: https://api.dsa-api.com/v1/version
+    expectedStatusCodes: [200]
+    tags: [production]
+
+  - name: API — health (DB-backed)
+    url: https://api.dsa-api.com/v1/health
+    expectedStatusCodes: [200]
+    tags: [production]
+
+  - name: Docs (Swagger UI)
+    url: https://docs.dsa-api.com/docs
+    expectedStatusCodes: [200]
+    tags: [production]
+
+  - name: Open data — trusted-flaggers.json
+    url: https://raw.githubusercontent.com/kraboo-labs/dsa-data/main/data/trusted-flaggers.json
+    expectedStatusCodes: [200]
+    tags: [open-data]
+
+  - name: Open data — changelog.json
+    url: https://raw.githubusercontent.com/kraboo-labs/dsa-data/main/data/changelog.json
+    expectedStatusCodes: [200]
+    tags: [open-data]
+
+  - name: Upstream — EU register
+    url: https://digital-strategy.ec.europa.eu/en/policies/trusted-flaggers-under-dsa
+    expectedStatusCodes: [200]
+    tags: [upstream]
+
+status-website:
+  cname: status.dsa-api.com
+  name: dsa-api — status
+  introTitle: dsa-api status
+  introMessage: |
+    Live availability of the dsa-api.com REST API, the open dataset at
+    [kraboo-labs/dsa-data](https://github.com/kraboo-labs/dsa-data), and
+    the upstream EU Trusted Flaggers register we mirror.
+
+    This is a community mirror. The authoritative source remains
+    [the European Commission page](https://digital-strategy.ec.europa.eu/en/policies/trusted-flaggers-under-dsa).
+  navbar:
+    - title: Status
+      href: /
+    - title: API docs
+      href: https://docs.dsa-api.com
+    - title: GitHub — code
+      href: https://github.com/kraboo-labs/dsa-api
+    - title: GitHub — data
+      href: https://github.com/kraboo-labs/dsa-data
+
+assignees:
+  - mravec-kraboo
+
+i18n:
+  pageTitle: dsa-api — status
+  pageDescription: Live status of dsa-api.com and the kraboo-labs/dsa-data dataset.
