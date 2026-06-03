@@ -1,7 +1,7 @@
 url: https://api.dsa-api.com/v1/health
-status: up
-code: 200
-responseTime: 343
-lastUpdated: 2026-06-02T23:36:35.185Z
+status: down
+code: 503
+responseTime: 471
+lastUpdated: 2026-06-03T08:02:07.127Z
 startTime: 2026-05-30T06:04:44.314Z
 generator: Upptime <https://github.com/upptime/upptime>
