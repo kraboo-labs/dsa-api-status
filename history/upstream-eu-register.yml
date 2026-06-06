@@ -1,7 +1,7 @@
 url: https://digital-strategy.ec.europa.eu/en/policies/trusted-flaggers-under-dsa
-status: up
-code: 200
-responseTime: 407
-lastUpdated: 2026-06-05T23:30:11.110Z
+status: down
+code: 403
+responseTime: 57
+lastUpdated: 2026-06-06T03:32:28.056Z
 startTime: 2026-05-30T06:05:29.718Z
 generator: Upptime <https://github.com/upptime/upptime>
