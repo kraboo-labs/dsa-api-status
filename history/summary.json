@@ -66,7 +66,7 @@
     "uptimeYear": "100.00%",
     "time": 122,
     "timeDay": 151,
-    "timeWeek": 152,
+    "timeWeek": 169,
     "timeMonth": 122,
     "timeYear": 122,
     "dailyMinutesDown": {}
@@ -84,7 +84,7 @@
     "uptimeYear": "100.00%",
     "time": 127,
     "timeDay": 177,
-    "timeWeek": 145,
+    "timeWeek": 160,
     "timeMonth": 127,
     "timeYear": 127,
     "dailyMinutesDown": {}
@@ -94,17 +94,17 @@
     "url": "https://digital-strategy.ec.europa.eu/en/policies/trusted-flaggers-under-dsa",
     "icon": "https://icons.duckduckgo.com/ip3/digital-strategy.ec.europa.eu.ico",
     "slug": "upstream-eu-register",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 376,
-    "timeDay": 87,
-    "timeWeek": 257,
-    "timeMonth": 376,
-    "timeYear": 376,
+    "time": 375,
+    "timeDay": 146,
+    "timeWeek": 255,
+    "timeMonth": 375,
+    "timeYear": 375,
     "dailyMinutesDown": {}
   }
 ]
