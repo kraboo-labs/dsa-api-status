@@ -94,17 +94,17 @@
     "url": "https://digital-strategy.ec.europa.eu/en/policies/trusted-flaggers-under-dsa",
     "icon": "https://icons.duckduckgo.com/ip3/digital-strategy.ec.europa.eu.ico",
     "slug": "upstream-eu-register",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 365,
-    "timeDay": 120,
-    "timeWeek": 248,
-    "timeMonth": 365,
-    "timeYear": 365,
+    "time": 372,
+    "timeDay": 207,
+    "timeWeek": 260,
+    "timeMonth": 372,
+    "timeYear": 372,
     "dailyMinutesDown": {}
   }
 ]
